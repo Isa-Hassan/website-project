@@ -12,12 +12,13 @@
 body {
   margin: 0;
   padding: 0;
-  background: url("portfolio.jpg") no-repeat center center fixed;
+  background: url("portfolio_background.jpg") no-repeat center center fixed;
   background-size: cover;
   font-family: Arial, sans-serif;
+  
 }
+  
 
-/* Custom Scrollbar */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -25,7 +26,7 @@ body {
     background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb {
-    background: black;
+    background: #b74b4b;
     border-radius: 12px;
     transition: all 0.3s ease;
 }
@@ -33,14 +34,13 @@ body {
     background: black;
 }
 
-/* Navbar */
+
 nav {
-  position: fixed; /* makes it stick */
-  top: 0;          /* stick to top of page */
+  position: fixed; 
+  top: 0;          
   left: 0;
   width: 100%;
   z-index: 1000;  
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* subtle shadow */
 }
 .nav-container {
   display: flex;
@@ -51,14 +51,13 @@ nav {
 
 
 .logo {
-    color: white;
+    color: black;
     font-size: 2rem;
     font-weight: bold;
 }
 
 .logo span {
-    color: white;
-    /* text-shadow: 0 0 10px red; */
+    color: black;
 }
 
 .hamburger,
@@ -79,7 +78,7 @@ nav {
 
 .nav-container .links a {
     position: relative;
-    color: white;
+    color: black;
     font-size: 1.2rem;
     margin: 0 20px;
     font-weight: 550;
@@ -131,40 +130,22 @@ nav {
 
 section {
     width: 100%;
-    min-height: 100vh;        /* make it full screen height */
+    min-height: 100vh;        
     display: flex;
-    justify-content: center;  /* center horizontally */
-    align-items: center;      /* center vertically */
+    justify-content: center;  
+    align-items: center;      
     text-align: center;
-    padding: 0;               /* remove any top spacing */
+    padding: 0;              
     margin: 0;
 }
 
 section .main-container {
     display: flex;
-    flex-direction: column;   /* stack vertically */
+    flex-direction: column;   
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 800px;         /* keep content neat */
-}
-
-.main-container .image {
-    width: 500px;
-    height: 80vh;
-    border-radius: 100%;
-    overflow: hidden;
-    box-shadow: 0 0 50px #b74b4b;
-}
-
-.main-container .image img {
-    width: 50%;
-    height: 50%;
-    object-fit: cover;
-}
-
-.main-container .image:hover {
-    animation: animate 1.5s ease-in-out infinite;
+    max-width: 800px;         
 }
 
 @keyframes animate {
@@ -190,7 +171,6 @@ section .main-container {
 
 .content h1 span {
     color: #b74b4b;
-    text-shadow: 0 0 10px #b74b4b;
 }
 
 .content .typewriter {
@@ -200,7 +180,6 @@ section .main-container {
 
 .content .typewriter-text {
     color: #b74b4b;
-    text-shadow: 0 0 10px #b74b4b;
 }
 
 .typewriter-text{
@@ -257,14 +236,14 @@ section .main-container {
 /* About Section */
 .about .about-details {
     display: flex;
-    justify-content: flex-start; /* align items horizontally from left */
-    align-items: center;         /* vertically center the box next to the image */
-    gap: 40px;                   /* space between image and text box */
-    flex-wrap: nowrap;            /* keep them side by side */
+    justify-content: flex-start; 
+    align-items: center;         
+    gap: 40px;                   
+    flex-wrap: nowrap;           
 }
 
 .about .about-details .left {
-    flex: 1; /* allow flexible sizing */
+    flex: 1; 
     display: flex;
     justify-content: center;
 }
@@ -283,7 +262,7 @@ section .main-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 600px;   /* limit text width */
+    max-width: 600px;   
 }
 
 .about-details .right p {
@@ -296,10 +275,10 @@ section .main-container {
 
 
 
-/* 📱 Responsive Fix */
+
 @media (max-width: 900px) {
     .about .about-details {
-        flex-direction: column; /* stack only on small screens */
+        flex-direction: column; 
         text-align: center;
     }
 
@@ -458,8 +437,9 @@ section .main-container {
 }
 
 .contact-item:hover i {
-  transform: scale(1.2); /* icon grows on hover */
+  transform: scale(1.2); 
 }
+
 /* Footer */
 footer {
     background: #b74b4b;
@@ -482,7 +462,7 @@ footer .text span a:hover {
     text-decoration: underline;
 }
 
-/* Scroll Button */
+
 .scroll-button a {
     position: fixed;
     bottom: 20px;
@@ -495,7 +475,7 @@ footer .text span a:hover {
     padding: 7px 12px;
 }
 
-/* Media Queries */
+
 @media (max-width: 1000px) {
     .about .about-details {
         flex-direction: column;
@@ -591,13 +571,11 @@ footer .text span a:hover {
 
     .typewriter span::after {
         content: "";
-        /* background-color: black; */
         position: absolute;
         width: calc(100% + 8px);
         height: 100%;
         right: -8;
-        /* border-left: 3px solid black; */
-        /* animation:  cursor 0.6s infinite; */
+      
     }
 
     @keyframes cursor {
@@ -623,7 +601,7 @@ footer .text span a:hover {
     content: "Software Developer";
     }
 }
-/* Journey Section */
+
 .journey {
   padding: 80px 0;
   color: black;
@@ -642,19 +620,6 @@ footer .text span a:hover {
   align-items: flex-start;
   margin-top: 50px;
 }
-
-/* .timeline-horizontal::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background: linear-gradient(90deg, #6a11cb, #2575fc);
-  transform: translateY(-50%);
-  z-index: 1;
-  border-radius: 2px;
-} */
 
 .timeline-item {
   position: relative;
