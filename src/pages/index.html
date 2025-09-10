@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    
+<nav>
+  <div class="nav-container">
+    <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+      <span>Isa</span>
+    </div>
+    <div class="links">
+      <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#">Home</a></div>
+      <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#about">About</a></div>
+      <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#skills">Skills</a></div>
+      <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#journey">Journey</a></div>
+      <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#contact">Contact</a></div>
+    </div>
+    <i class="fa-solid fa-bars hamburger" onclick="hamburg()"></i>
+  </div>
+  <div class="dropdown">
+    <div class="links">
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#journey">Journey</a>
+      <a href="#contact">Contact</a>
+      <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+    </div>
+  </div>
+</nav>
+
+<section>
+  <div class="main-container">
+    <div class="content">
+      <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey I'm
+        <span>Isa</span>
+      </h1>
+      <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">
+        I'm a <span class="typewriter-text"></span>
+      </div>
+      <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">
+        I'm a developer with a passion for learning and growth.
+      </p>
+      <div class="social-links">
+        <a href="https://github.com/Isa-Hassan" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/isa-hassan-0b8863234/" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+      <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
+        <a href="#contact"><button >Contact Me</button></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="about" id="about">
+  <div class="content">
+     <h2 class="section-title" data-aos="fade-up" data-aos-duration="1500">About Me</h2>
+    <div class="about-details">
+      
+      <!-- Left: Image -->
+      <div class="left" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
+        <img src="../assets/images/test.png" alt="Picture of Isa">
+      </div>
+      
+      <!-- Right: Text -->
+      <div class="right" data-aos="flip-down" data-aos-duration="1500" data-aos-delay="300">
+        <p>
+          I recently graduated with a diploma of ICT in Application Development at Cape Peninsula University of Technology. 
+          I am passionate about expanding my skills and knowledge, and I believe your company will give me the opportunity to do so. 
+          I feel like my eagerness to learn will make me a valuable employee at your organization. 
+          I am excited about the possibility of working alongside talented professionals in your company.
+        </p>
+
+        <!-- Button -->
+        <div class="button" data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="400">
+          <a href="../assets/documents/Isa Hassan Final CV.pdf"><button>Download CV</button></a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- 🔹 Skills Section -->
+<section class="skills" id="skills">
+
+  <div class="skills-container">
+     <h2 class="section-title" data-aos="fade-up" data-aos-duration="1500">Skills</h2>
+    <!-- Frontend -->
+    <div class="skill-category">
+      <h3>Frontend</h3>
+      <div class="skill-icons">
+        <div class="skill"><i class="fab fa-html5" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200"></i><p>HTML</p></div>
+        <div class="skill"><i class="fab fa-css3-alt" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200"></i><p>CSS</p></div>
+        <div class="skill"><i class="fab fa-js" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200"></i><p>JavaScript</p></div>
+        <div class="skill"><i class="fab fa-angular" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200"></i><p>Angular</p></div>
+        <div class="skill"><i class="fab fa-vuejs" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200"></i><p>Vue.js</p></div>
+      </div>
+    </div>
+
+    <!-- Backend -->
+    <div class="skill-category">
+      <h3>Backend</h3>
+      <div class="skill-icons">
+        <div class="skill"><i class="fab fa-java" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200"></i><p>Java</p></div>
+        <div class="skill"><i class="fab fa-python" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200"></i><p>Python</p></div>
+        <div class="skill"><i class="fas fa-database" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200"></i><p>SQL</p></div>
+      </div>
+    </div>
+
+    <!-- Tools / Design -->
+    <div class="skill-category">
+      <h3>Tools & Design</h3>
+      <div class="skill-icons">
+        <div class="skill"><i class="fab fa-figma" data-aos="fade-up" data-aos-duration="1500"></i><p>Figma</p></div>
+        <div class="skill"><i class="fab fa-git-alt" data-aos="fade-up" data-aos-duration="1500"></i><p>Git</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Load Font Awesome (for icons) -->
+<script src="https://kit.fontawesome.com/your-key.js" crossorigin="anonymous"></script>
+
+<!-- Journey Section -->
+<section class="journey" id="journey">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up" data-aos-duration="1200">
+      <h2>My Journey</h2>
+    </div>
+   <p>My Education and Experience</p>
+    <div class="timeline-horizontal">
+      <!-- Milestone 1 -->
+      <div class="timeline-item" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
+        <div class="dot"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div class="timeline-content above">
+          <h3>Cape Peninsula University of Technology</h3>
+          <p>Diploma: ICT in Application Development<br>2022 - 2024</p>
+        </div>
+      </div>
+
+      <!-- Milestone 2 -->
+      <div class="timeline-item" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+        <div class="dot"><i class="fa-solid fa-laptop-code"></i></div>
+        <div class="timeline-content below">
+          <h3>CSG – Software Engineer Intern</h3>
+          <p>01 July 2024 – 31 December 2024</p>
+          <ul>
+            <li>Developed backend APIs using Java and built new web pages using Angular.</li>
+            <li>Used Azure DevOps to create pull requests and participated in code reviews.</li>
+            <li>Attended daily stand-ups to discuss progress and plan tasks.</li>
+            <li>Used Ubuntu to manage Docker containers.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Milestone 3 -->
+      <div class="timeline-item" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="500">
+        <div class="dot"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div class="timeline-content above">
+          <h3>Cape Peninsula University of Technology</h3>
+          <p>Advanced Diploma: ICT in Application Development<br>2025 - 2026</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Contact Section -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up" data-aos-duration="1500">
+      <h2>My Contacts</h2>
+    </div>
+
+    <p>You can contact me via:</p>
+
+    <div class="contact-links" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+      
+      <!-- LinkedIn -->
+      <i class="fa-brands fa-linkedin"></i>
+      <a href="https://www.linkedin.com/in/isa-hassan-0b8863234/" target="_blank" rel="noopener noreferrer">
+        <span>linkedin.com/in/isa-hassan-0b8863234/</span>
+      </a>
+
+      <!-- Email -->
+        <i class="fa-solid fa-envelope"></i>
+      <a href="mailto:isahasssan@gmail.com">
+        <span>isahasssan@gmail.com</span>
+      </a>
+
+      <!-- GitHub -->
+         <i class="fa-brands fa-github"></i>
+      <a href="https://github.com/Isa-Hassan" target="_blank" rel="noopener noreferrer">
+        <span>github.com/Isa-Hassan</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="text">
+    <span>Created By <a href="#">Isa Hassan</a> © All rights reserved.</span>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({ offset: 0 });
+</script>
+<script src="../assets/js/scripts.js"></script>
+</body>
+</html>
