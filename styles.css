@@ -158,8 +158,8 @@ section .main-container {
 }
 
 .main-container .image img {
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
     object-fit: cover;
 }
 
@@ -272,6 +272,7 @@ section .main-container {
 .about .left img {
     max-width: 100%;
     height: auto;
+    height: 500px;
     width: 400px;
     object-fit: cover;
     border-radius: 12px;
@@ -411,7 +412,6 @@ section .main-container {
 }
 
 /* Contact */
-
 .contact {
   padding: 80px 20px;
   text-align: center;
@@ -419,8 +419,9 @@ section .main-container {
 
 .contact p {
   margin-bottom: 30px;
-  color: #ddd;
+  color: black;
   font-size: 1.1rem;
+  font-weight: bold;
 }
 
 .contact-links {
@@ -430,26 +431,35 @@ section .main-container {
   align-items: center;
 }
 
-.contact-links .contact-item {
+.contact-item {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-size: 1rem;
-  color: #ddd;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: black; 
   text-decoration: none;
   transition: 0.3s ease;
 }
 
-.contact-links .contact-item i {
-  font-size: 1.5rem;
-  color: #b74b4b;
+.contact-item i {
+  font-size: 2rem; 
+  color: black;
+  transition: transform 0.3s ease;
 }
 
-.contact-links .contact-item:hover {
-  color: #b74b4b;
-  transform: translateY(-3px);
+.contact-item span {
+  color: black;      
+  font-weight: bold; 
 }
 
+.contact-item:hover span {
+  color: #b74b4b; 
+}
+
+.contact-item:hover i {
+  transform: scale(1.2); /* icon grows on hover */
+}
 /* Footer */
 footer {
     background: #b74b4b;
